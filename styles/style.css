@@ -1,0 +1,157 @@
+.navbar .title {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 800;
+}
+
+.navbar .nav-items .nav-link, .intro .text-wrapper p, .intro-form label {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.intro .text-wrapper h1, .intro .text-wrapper2 h2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 72px;
+}
+
+.intro .text-wrapper2 p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+.container {
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.header-inner {
+  margin-top: 51px;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .title {
+  color: #333333;
+  font-size: 36px;
+  line-height: 53px;
+}
+
+.navbar .nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar .nav-items .nav-link {
+  color: #333333;
+}
+
+.intro {
+  margin-top: 104px;
+}
+
+.intro .text-wrapper {
+  margin-left: 225px;
+  max-width: 543px;
+}
+
+.intro .text-wrapper p {
+  margin-bottom: 16px;
+  color: #2D9CDB;
+  line-height: 27px;
+}
+
+.intro .text-wrapper h1 {
+  color: #333333;
+}
+
+.intro img {
+  border-radius: 18px;
+  width: 100%;
+  margin-top: 42px;
+}
+
+.intro .text-wrapper2 {
+  max-width: 360px;
+  margin-left: 225px;
+}
+
+.intro .text-wrapper2 h2 {
+  color: #333333;
+  margin-top: 42px;
+}
+
+.intro .text-wrapper2 p {
+  color: #4F4F4F;
+  margin: 42px 0;
+}
+
+.intro-form fieldset {
+  padding: 0 20px;
+}
+
+.intro-form label {
+  font-size: 14px;
+  line-height: 21px;
+  color: #828282;
+}
+
+.intro-form input[type=email] {
+  margin-top: 9px;
+  padding: 15px 0 15px 21px;
+  background-color: #F2F2F2;
+  border-radius: 12px;
+  border: none;
+  display: inline;
+  width: 100%;
+  outline: none;
+}
+
+.intro-form button {
+  background-color: #2D9CDB;
+  border: none;
+  border-radius: 12px;
+  padding: 11px 27px;
+  color: #FFFFFF;
+  position: relative;
+  bottom: 3.1em;
+  left: 17.8em;
+}
+/*# sourceMappingURL=style.css.map */

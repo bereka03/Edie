@@ -1,0 +1,100 @@
+@import './config.scss';
+body {
+    background-color: $bodyColor;
+}
+.container {
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.header-inner {
+    margin-top: 51px;
+}
+.navbar {
+    @include flex_row();
+    justify-content: space-between;
+    .title {
+        @extend %FontHeebo;
+        color: $gray1;
+        font-size: 36px;
+        line-height: 53px;
+    }
+    .nav-items {
+        @include flex_row();
+        align-items: center;
+        gap: 40px;
+        .nav-link {
+            @extend %Poppins500;
+            color: $gray1;
+        }
+    }
+}
+.intro {
+    margin-top: 104px;
+    .text-wrapper {
+        margin-left: 225px;
+        max-width: 543px;
+        p {
+            margin-bottom: 16px;
+            color: $lightblue;
+            @extend %Poppins500;
+            line-height: 27px;
+        }
+        h1 {
+            color: $gray1;
+            @extend %titlesFont;
+        }
+    }
+    img {
+        border-radius: 18px;
+        width: 100%;
+        margin-top: 42px;
+    }
+    .text-wrapper2 {
+        max-width: 360px;
+        margin-left: 225px;
+        h2 {
+            @extend %titlesFont;
+            color: $gray1;
+            margin-top: 42px;
+        }
+        p {
+            @extend %poppins400;
+            color: $gray2;
+            margin: 42px 0;
+        }
+    }
+}
+.intro-form {
+    fieldset {
+        padding: 0 20px;
+    }
+    label {
+        @extend %Poppins500;
+        font-size: 14px;
+        line-height: 21px;
+        color: $gray3;
+    }
+    input[type=email]{
+        margin-top: 9px;
+        padding: 15px 0 15px 21px;
+        background-color: $gray6;
+        border-radius: 12px;
+        border: none;
+        display: inline;
+        width: 100%;
+        outline: none;
+    }
+    button {
+        background-color: $lightblue;
+        border: none;
+        border-radius: 12px;
+        padding: 11px 27px;
+        color: #FFFFFF;
+        position: relative;
+        bottom: 3.1em;
+        left: 17.8em;
+    }
+        
+}
+

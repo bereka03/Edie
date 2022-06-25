@@ -1,0 +1,45 @@
+$gray1: #333333;
+$gray2: #4F4F4F;
+$gray3: #828282;
+$lightblue: #2D9CDB;
+$gray6: #F2F2F2;
+$bodyColor: #FFFFFF;
+$green: #27AE60;
+$red: #EB5757;
+$darkBlue: #100E1D;
+
+@mixin flex_row() {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@mixin flex_column() {
+    display: flex;
+    flex-direction: column;
+}
+%FontHeebo {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 800;
+}
+%Poppins500 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+}
+%titlesFont {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+}
+%poppins400 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
