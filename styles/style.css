@@ -218,10 +218,10 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 74px;
-  padding: 46px 34px;
 }
 
 .services-wrapper .each-service-wrapper {
+  padding: 46px 34px;
   cursor: pointer;
 }
 

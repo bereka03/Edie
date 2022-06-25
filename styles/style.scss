@@ -114,8 +114,8 @@ h3 {
     @include flex_row();
     justify-content: center;
     gap: 74px;
-    padding: 46px 34px;
     .each-service-wrapper {
+        padding: 46px 34px;
         cursor: pointer;
         h4 {
             @extend %poppins700;
