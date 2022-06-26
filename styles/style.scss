@@ -47,7 +47,7 @@ body {
 .intro {
     margin-top: 104px;
     .text-wrapper {
-        margin-left: 225px;
+        margin-left: 15%;
         max-width: 543px;
         p {
             margin-bottom: 16px;
@@ -67,7 +67,7 @@ body {
     }
     .text-wrapper2 {
         max-width: 360px;
-        margin-left: 225px;
+        margin-left: 15%;
         h2 {
             @extend %titlesFont;
             color: $gray1;
@@ -123,7 +123,7 @@ body {
 }
 h3 {
     @extend %h3fonts;
-    color: $gray1
+    color: $gray1;
 }
 .services-wrapper {
     @include flex_row();
@@ -177,4 +177,148 @@ h3 {
 .back-end {
     @extend %icon;
     background-color: $red;
+}
+.design {
+    margin-top: 194px;
+}
+.design-inner {
+    h3 {
+        max-width: 448px;
+    }
+    a {
+        position: relative;
+        color: $lightblue;
+        left: 90%;
+        display: inline;
+        vertical-align: middle;
+        padding: 10px;
+        border: 1px solid transparent;
+        transition: all 0.3s ease-out;
+        bottom: 2em;
+        i {
+            display: inline;
+            vertical-align: middle;
+        }
+    } 
+    a:hover {
+        border: 1px solid $lightblue;
+        border-radius: 12px;
+        box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+    }
+}
+.photos-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 120px;
+    .each-photo-wrapper {
+        position: relative;
+        @include flex_column();
+        p {
+            @extend %poppins300;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        h4 {
+            @extend %poppins500;
+        }
+        img {
+            border-radius: 12px;
+            max-width: 545px;
+        }
+    }
+    .each-photo-wrapper:nth-child(1) {
+        top: 188px;
+    }
+    .each-photo-wrapper:nth-child(2){
+        top: 40px;
+    }
+    .each-photo-wrapper:nth-child(3){
+        margin-top: 188px;
+        position: static;
+    }
+}
+.team {
+    margin-top: 100px;
+}
+.team-inner-above {
+    @include flex_row();
+    justify-content: space-between;
+    .text-wrapper {
+        h3 {
+            max-width: 280px;
+            margin: 7px 0 14px 0;
+        }
+        p {
+            color: $red;
+            @extend %poppins500;
+            font-size: 18px;
+            line-height: 27px;
+        }
+        .desc {
+            @extend %poppins400;
+            color: $gray2;
+            font-size: 16px;
+            line-height: 24px;
+            max-width: 273px;
+        }
+    }
+    .first-img-wrapper {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .img-wrapper {
+        @include flex-row();
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+        img {
+            border-radius: 12px;
+            max-width: 100%;
+        }
+    }
+    .others-wrapper {
+        @include flex_column();
+        img:nth-child(1){
+            margin-bottom: 24px;
+            max-width: 90%;
+        }
+    }
+}
+.team-inner-below {
+    margin-top: 196px;
+    h3 {
+        max-width: 937px;
+        margin-bottom: 49px;
+    }
+    .person-img-wrapper{
+        @include flex-row();
+        gap: 35px;
+        img {
+            max-width: 80px;
+            border-radius: 12px;
+        }
+        h4 {
+            @extend %poppins500;
+        }
+        p {
+            @extend %poppins500;
+            color: $gray3;
+            font-size: 18px;
+            line-height: 27px;
+        }
+    }
+}
+footer {
+    background-color: $darkBlue;
+    margin-top: 129px;
+    color: #FFFFFF;
+    .footer-inner {
+        padding-top: 46px;
+        .nav-items {
+            @include flex_column();
+            .nav-link {
+                color: #FFFFFF;
+            }
+        }
+    }
 }
