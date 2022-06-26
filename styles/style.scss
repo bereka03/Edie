@@ -13,6 +13,21 @@ body {
 .navbar {
     @include flex_row();
     justify-content: space-between;
+    .line {
+        width: 0;
+        height: 2px;
+        background-color: black;
+        visibility: hidden;
+        transition: all 0.3s;
+        position: relative;
+        bottom: 5px;
+    }
+    li:hover {
+        .line {
+            visibility: visible;
+            width: 100%;
+        }
+    }
     .title {
         @extend %FontHeebo;
         color: $gray1;
@@ -116,6 +131,7 @@ h3 {
     gap: 74px;
     .each-service-wrapper {
         padding: 46px 34px;
+        transition: all 0.3s ease-out;
         cursor: pointer;
         h4 {
             @extend %poppins700;
@@ -130,11 +146,7 @@ h3 {
             padding: 9px 12px;
             color: $gray3;
             border-radius: 12px;
-            transition: all 0.3s ease-out;
-        }
-        .service-link:hover {
-            background-color: $lightblue;
-            color: #FFFFFF;
+            transition: all 0.5s ease-out;
         }
         .service-link{
             &.diff {
@@ -144,6 +156,13 @@ h3 {
         }
         &.front {
             @extend %front-end-service;
+        }
+    }
+    .each-service-wrapper:hover{
+        @extend %front-end-service;
+        .service-link {
+            background-color: $lightblue;
+            color: #FFFFFF;
         }
     }
 }
