@@ -204,10 +204,6 @@ body {
   margin: 42px 0;
 }
 
-fieldset {
-  padding: 0 20px;
-}
-
 label {
   font-size: 14px;
   line-height: 21px;
@@ -238,7 +234,7 @@ button {
 
 .intro-form button {
   bottom: 3.1em;
-  left: 17.8em;
+  left: 20.7em;
 }
 
 .intro-form button:hover {
@@ -359,8 +355,7 @@ h3 {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-row-gap: 120px;
-  -ms-grid-column: 20;
-  grid-column: 20px;
+  grid-column-gap: 20px;
 }
 
 .photos-wrapper .each-photo-wrapper {
@@ -415,6 +410,7 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 50px;
 }
 
 .team-inner-above .text-wrapper h3 {
@@ -680,6 +676,9 @@ footer img:hover {
 }
 
 @media only screen and (max-width: 800px) {
+  .container {
+    padding: 0 40px;
+  }
   .navbar .nav-list-wrapper {
     position: absolute;
     left: -100%;
@@ -732,6 +731,29 @@ footer img:hover {
     display: block;
     color: #000000;
   }
+  .photos-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 84px;
+  }
+  .photos-wrapper .each-photo-wrapper {
+    position: static;
+    top: 0;
+  }
+  .photos-wrapper .each-photo-wrapper:nth-child(2) {
+    top: 100px;
+  }
+  .photos-wrapper .each-photo-wrapper:nth-child(3) {
+    margin: 0;
+  }
   .nav-list-wrapper.active {
     left: 0;
     z-index: 999;
@@ -749,9 +771,18 @@ footer img:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .photos-wrapper {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+  .team-inner-above {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 36px;
   }
   footer .footer-inner .above-wrapper {
     display: -webkit-box;

@@ -88,9 +88,6 @@ body {
         }
     }
 }
-fieldset {
-    padding: 0 20px;
-}
 label {
     @extend %Poppins500;
     font-size: 14px;
@@ -119,7 +116,7 @@ button {
 .intro-form {
     button {
         bottom: 3.1em;
-        left: 17.8em;
+        left: 20.7em;
     }
     button:hover {
         background-color: $green;
@@ -220,7 +217,7 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 120px;
-    grid-column: 20px;
+    grid-column-gap: 20px;
     .each-photo-wrapper {
         position: relative;
         @include flex_column();
@@ -254,6 +251,7 @@ h3 {
 .team-inner-above {
     @include flex_row();
     justify-content: space-between;
+    gap: 50px;
     .text-wrapper {
         h3 {
             max-width: 280px;
@@ -424,8 +422,12 @@ footer {
             width: 100%;
         }
     }
+    
 }
 @media only screen and (max-width: 800px) {
+    .container {
+        padding: 0 40px;
+    }
     .navbar {
         .nav-list-wrapper {
             position: absolute;
@@ -463,6 +465,21 @@ footer {
             }
         }
     }
+    .photos-wrapper {
+        @include flex_column();
+        align-items: center;
+        margin-top: 84px;
+        .each-photo-wrapper {
+            position: static;
+            top: 0;
+        }
+        .each-photo-wrapper:nth-child(2) {
+            top: 100px;
+        }
+        .each-photo-wrapper:nth-child(3) {
+            margin: 0;
+        }
+    }
     .nav-list-wrapper {
         &.active {
             left: 0;
@@ -476,8 +493,10 @@ footer {
     .services-wrapper {
         @include flex_column();
     }
-    .photos-wrapper {
-        grid-template-columns: 1fr;
+    .team-inner-above {
+        @include flex_column();
+        align-items: flex-start;
+        gap: 36px;
     }
     footer {
         .footer-inner {
