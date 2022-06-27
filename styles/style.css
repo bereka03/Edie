@@ -1,10 +1,10 @@
-.navbar .title {
+.navbar .title, footer .footer-inner .above-wrapper .contacts h2 {
   font-family: 'Heebo';
   font-style: normal;
   font-weight: 800;
 }
 
-.navbar .nav-items .nav-link, .intro .text-wrapper p, .intro-form label {
+.navbar .nav-items .nav-link, .intro .text-wrapper p, label {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -20,7 +20,7 @@
   line-height: 72px;
 }
 
-.intro .text-wrapper2 p, .team-inner-above .text-wrapper .desc {
+.intro .text-wrapper2 p, .team-inner-above .text-wrapper .desc, footer .footer-inner .nav-items .nav-link {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -74,6 +74,15 @@ h3 {
           box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
   border-radius: 24px;
   padding: 46px 34px;
+}
+
+footer .footer-inner p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F2F2F2;
 }
 
 body {
@@ -187,17 +196,17 @@ body {
   margin: 42px 0;
 }
 
-.intro-form fieldset {
+fieldset {
   padding: 0 20px;
 }
 
-.intro-form label {
+label {
   font-size: 14px;
   line-height: 21px;
   color: #828282;
 }
 
-.intro-form input[type=email] {
+input[type=email] {
   margin-top: 9px;
   padding: 15px 0 15px 21px;
   background-color: #F2F2F2;
@@ -208,17 +217,20 @@ body {
   outline: none;
 }
 
-.intro-form button {
+button {
   background-color: #2D9CDB;
   border-radius: 12px;
   border: none;
   padding: 11px 27px;
   color: #FFFFFF;
   position: relative;
-  bottom: 3.1em;
-  left: 17.8em;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+
+.intro-form button {
+  bottom: 3.1em;
+  left: 17.8em;
 }
 
 .intro-form button:hover {
@@ -499,6 +511,70 @@ footer {
 
 footer .footer-inner {
   padding-top: 46px;
+  padding-bottom: 18px;
+}
+
+footer .footer-inner .above-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  align-items: center;
+}
+
+footer .footer-inner .above-wrapper .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+footer .footer-inner .above-wrapper .contacts h2 {
+  font-size: 36px;
+  line-height: 53px;
+  color: #FFFFFF;
+}
+
+footer .footer-inner .above-wrapper .contacts .icons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 11px;
+}
+
+footer .footer-inner .above-wrapper input[type=email] {
+  max-width: 350px;
+}
+
+footer .footer-inner .above-wrapper button {
+  right: 6.5em;
+}
+
+footer .footer-inner .above-wrapper label {
+  color: #FFFFFF;
+}
+
+footer .footer-inner .above-wrapper button:hover {
+  background-color: #100E1D;
 }
 
 footer .footer-inner .nav-items {
@@ -509,9 +585,78 @@ footer .footer-inner .nav-items {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 5px;
 }
 
 footer .footer-inner .nav-items .nav-link {
   color: #FFFFFF;
+  font-size: 18px;
+  line-height: 200%;
+}
+
+footer .footer-inner .nav-items li {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-inner .nav-items .line {
+  width: 0;
+  height: 2px;
+  background-color: #FFFFFF;
+  visibility: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+  bottom: 3px;
+}
+
+footer .footer-inner .nav-items li:hover .line {
+  visibility: visible;
+  width: 100%;
+}
+
+footer .footer-inner p {
+  margin-top: 100px;
+  text-align: center;
+}
+
+@-webkit-keyframes moveup {
+  0% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: 6px;
+  }
+}
+
+@keyframes moveup {
+  0% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: 6px;
+  }
+}
+
+footer img {
+  position: relative;
+}
+
+footer img:hover {
+  -webkit-animation-name: moveup;
+          animation-name: moveup;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 /*# sourceMappingURL=style.css.map */
