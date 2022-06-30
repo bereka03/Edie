@@ -745,7 +745,7 @@ footer img:hover {
     color: #000000;
   }
   .intro .text-wrapper2, .intro .text-wrapper {
-    margin-left: 30px;
+    margin-left: 5%;
   }
   .intro .text-wrapper2 h1, .intro .text-wrapper2 h2, .intro .text-wrapper h1, .intro .text-wrapper h2 {
     font-size: 24px;
