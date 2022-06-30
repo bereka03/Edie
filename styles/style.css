@@ -118,7 +118,7 @@ body {
 .navbar .line {
   width: 0;
   height: 2px;
-  background-color: black;
+  background-color: #333333;
   visibility: hidden;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -158,6 +158,10 @@ body {
 
 .navbar .nav-items .nav-link {
   color: #333333;
+}
+
+.navbar .nav-items .current {
+  color: #2D9CDB;
 }
 
 .navbar .material-icons.burger {
@@ -571,7 +575,8 @@ footer .footer-inner .above-wrapper input[type=email] {
 }
 
 footer .footer-inner .above-wrapper button {
-  right: 6.5em;
+  left: 14em;
+  bottom: 3.09em;
 }
 
 footer .footer-inner .above-wrapper label {
@@ -679,6 +684,14 @@ footer img:hover {
   .container {
     padding: 0 40px;
   }
+  h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
   .navbar .nav-list-wrapper {
     position: absolute;
     left: -100%;
@@ -731,6 +744,27 @@ footer img:hover {
     display: block;
     color: #000000;
   }
+  .intro .text-wrapper2, .intro .text-wrapper {
+    margin-left: 30px;
+  }
+  .intro .text-wrapper2 h1, .intro .text-wrapper2 h2, .intro .text-wrapper h1, .intro .text-wrapper h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .intro .text-wrapper2 p, .intro .text-wrapper p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .intro .text-wrapper2 label, .intro .text-wrapper label {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .intro-form button {
+    left: 76%;
+  }
+  .design-inner {
+    padding-bottom: 10px;
+  }
   .photos-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -743,6 +777,7 @@ footer img:hover {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 84px;
+    margin-bottom: 35px;
   }
   .photos-wrapper .each-photo-wrapper {
     position: static;
@@ -784,6 +819,11 @@ footer img:hover {
             align-items: flex-start;
     gap: 36px;
   }
+  .design-inner a {
+    position: static;
+    padding: 10px;
+    margin-bottom: 100px;
+  }
   footer .footer-inner .above-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -796,6 +836,12 @@ footer img:hover {
         -ms-flex-align: start;
             align-items: flex-start;
     gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  footer .footer-inner .above-wrapper button {
+    left: 60%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -16,7 +16,7 @@ body {
     .line {
         width: 0;
         height: 2px;
-        background-color: black;
+        background-color: $gray1;
         visibility: hidden;
         transition: all 0.3s;
         position: relative;
@@ -44,6 +44,9 @@ body {
         .nav-link {
             @extend %Poppins500;
             color: $gray1;
+        }
+        .current {
+            color: $lightblue;
         }
     }
     .material-icons {
@@ -346,7 +349,8 @@ footer {
                 max-width: 350px;
             }
             button {
-                right: 6.5em;
+                left: 14em;
+                bottom: 3.09em;
             }
             label {
                 color: #FFFFFF;
@@ -428,6 +432,14 @@ footer {
     .container {
         padding: 0 40px;
     }
+    h3 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px;
+    }
     .navbar {
         .nav-list-wrapper {
             position: absolute;
@@ -465,10 +477,36 @@ footer {
             }
         }
     }
+    .intro {
+        .text-wrapper2, .text-wrapper {
+            margin-left: 30px;
+            h1, h2 {
+                font-size: 24px;
+                line-height: 36px;
+            }
+            p {
+                font-size: 12px;
+                line-height: 18px;
+            }
+            label {
+                font-size: 10px;
+                line-height: 15px;
+            }
+        }
+    }
+    .intro-form {
+        button {
+            left: 76%;
+        }
+    }
+    .design-inner {
+        padding-bottom: 10px;
+    }
     .photos-wrapper {
         @include flex_column();
         align-items: center;
         margin-top: 84px;
+        margin-bottom: 35px;
         .each-photo-wrapper {
             position: static;
             top: 0;
@@ -498,12 +536,30 @@ footer {
         align-items: flex-start;
         gap: 36px;
     }
+    .design-inner {
+        a {
+            position: static;
+            padding: 10px;
+            margin-bottom: 100px;
+        }
+    }
     footer {
         .footer-inner {
             .above-wrapper {
                 @include flex_column();
                 align-items: flex-start;
                 gap: 20px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 350px) {
+    footer {
+        .footer-inner {
+            .above-wrapper {
+                button {
+                    left: 60%;
+                }
             }
         }
     }
